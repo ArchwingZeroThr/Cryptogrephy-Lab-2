@@ -131,7 +131,7 @@ def s_aes_decrypt(ciphertext_16bit, key_16bit):
 
 - 具象化的UI界面
 
-  <img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024150229154.png" alt="image-20241024150229154" style="zoom: 50%;" />
+  <img src="image\image-20241024150229154.png" alt="image-20241024150229154" style="zoom: 50%;" />
 
 输入明文与密钥后，点击S-AES加密（16bits密钥）即可求得密文
 
@@ -141,13 +141,13 @@ def s_aes_decrypt(ciphertext_16bit, key_16bit):
 
 - 其他小组的加密结果：
 
-<img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024161823296.png" alt="image-20241024161823296" style="zoom:50%;" />
+<img src="image\image-20241024161823296.png" alt="image-20241024161823296" style="zoom:50%;" />
 
 
 
 - 本小组的解密结果
 
-<img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024161926587.png" alt="image-20241024161926587" style="zoom:50%;" />
+<img src="image\image-20241024161926587.png" alt="image-20241024161926587" style="zoom:50%;" />
 
 解出的明文可以对应上，故交叉验证成功
 
@@ -212,7 +212,7 @@ def aes_decrypt(sSrc, sKey):
 
 ​	②解密
 
-<img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024152300535.png" alt="image-20241024152300535" style="zoom:50%;" />
+<img src="image\image-20241024152300535.png" alt="image-20241024152300535" style="zoom:50%;" />
 
 ***输入密文与密钥后，点击ASCII码解密（16bits密钥）即可求得明文***
 
@@ -296,13 +296,13 @@ def decrypt(sSrc, sKey):
 
   加密：
 
-  <img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024152811846.png" alt="image-20241024152811846" style="zoom:50%;" />
+  <img src="image\image-20241024152811846.png" alt="image-20241024152811846" style="zoom:50%;" />
 
   ***输入明文与密钥后，点击双重加密（32bits密钥）即可求得密文***
 
   解密：
 
-  <img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024152858452.png" alt="image-20241024152858452" style="zoom:50%;" />
+  <img src="image\image-20241024152858452.png" alt="image-20241024152858452" style="zoom:50%;" />
 
 ***输入密文与密钥后，点击双重解密（32bits密钥）即可求得明文***
 
@@ -392,13 +392,13 @@ def decrypt(sSrc, sKey):
 
   加密：
 
-  <img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024153531079.png" alt="image-20241024153531079" style="zoom:50%;" />
+  <img src="image\image-20241024153531079.png" alt="image-20241024153531079" style="zoom:50%;" />
 
   ***输入明文与密钥后，点击三重加密（48bits密钥）即可求得密文***
 
   解密：
 
-  <img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024153622279.png" alt="image-20241024153622279" style="zoom:50%;" />
+  <img src="image\image-20241024153622279.png" alt="image-20241024153622279" style="zoom:50%;" />
 
 ***输入密文与密钥后，点击三重解密（48bits密钥）即可求得明文***
 
@@ -444,11 +444,11 @@ def attack(plaintext_input,ciphertext_input):
 
 - UI界面体现
 
-  <img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024161335011.png" alt="image-20241024161335011" style="zoom:50%;" />
+  <img src="image\image-20241024161335011.png" alt="image-20241024161335011" style="zoom:50%;" />
 
   点击“进入求密钥模式”，输入明文与密文。
 
-  <img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024161444138.png" alt="image-20241024161444138" style="zoom:50%;" />
+  <img src="image\image-20241024161444138.png" alt="image-20241024161444138" style="zoom:50%;" />
 
 ## 五·工作模式
 
@@ -485,11 +485,11 @@ def cbc_encrypt(plaintext,key):
 
 - UI界面体现
 
-  <img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024155054672.png" alt="image-20241024155054672" style="zoom:50%;" />
+  <img src="image\image-20241024155054672.png" alt="image-20241024155054672" style="zoom:50%;" />
 
   点击“进入CBC模式”按钮后，进入CBC模式：
 
-  <img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024155145308.png" alt="image-20241024155145308" style="zoom:50%;" />
+  <img src="image\image-20241024155145308.png" alt="image-20241024155145308" style="zoom:50%;" />
 
   ***输入明文与密钥后，点击CBC加密（16bits密钥）即可求得密文***
 
