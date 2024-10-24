@@ -485,11 +485,11 @@ def cbc_encrypt(plaintext,key):
 
 - UI界面体现
 
-  <img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024155054672.png" alt="image-20241024155054672" style="zoom:50%;" />
+  <img src="image\image-20241024155054672.png" alt="image-20241024155054672" style="zoom:50%;" />
 
   点击“进入CBC模式”按钮后，进入CBC模式：
 
-  <img src="C:\Users\86151\AppData\Roaming\Typora\typora-user-images\image-20241024155145308.png" alt="image-20241024155145308" style="zoom:50%;" />
+  <img src="image\image-20241024155145308.png" alt="image-20241024155145308" style="zoom:50%;" />
 
   ***输入明文与密钥后，点击CBC加密（16bits密钥）即可求得密文***
 
