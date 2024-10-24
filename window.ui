@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AES</class>
+ <widget class="QMainWindow" name="AES">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>956</width>
+    <height>718</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_menu">
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+	background-color:rgb(220, 220, 220)
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_saes_enc">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	border-radius:9px;
+	height:35px;
+	background-color:rgb(255, 255, 255)
+}</string>
+         </property>
+         <property name="text">
+          <string>S-AES加密(16bits密钥)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_saes_dec">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	background-color:rgb(255, 255, 255)
+}</string>
+         </property>
+         <property name="text">
+          <string>S-AES解密(16bits密钥)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_asc_enc">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	background-color:rgb(255, 255, 255)
+}</string>
+         </property>
+         <property name="text">
+          <string>ASCII码加密</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_asc_dec">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	background-color:rgb(255, 255, 255)
+}</string>
+         </property>
+         <property name="text">
+          <string>ASCII码解密</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_double_enc">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	background-color:rgb(255, 255, 255)
+}</string>
+         </property>
+         <property name="text">
+          <string>双重加密(32bits密钥)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_double_dec">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	background-color:rgb(255, 255, 255)
+}</string>
+         </property>
+         <property name="text">
+          <string>双重解密(32bits密钥)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_triple_enc">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	background-color:rgb(255, 255, 255)
+}</string>
+         </property>
+         <property name="text">
+          <string>三重加密（48bits密钥）</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_triple_dec">
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	background-color:rgb(255, 255, 255)
+}</string>
+         </property>
+         <property name="text">
+          <string>三重解密（48bits密钥）</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_content">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+	background-color:rgb(255, 255, 255)
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_input">
+       <property name="geometry">
+        <rect>
+         <x>189</x>
+         <y>70</y>
+         <width>461</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	border:1 solid px;
+	border-radius:9px;
+}</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_key">
+       <property name="geometry">
+        <rect>
+         <x>189</x>
+         <y>290</y>
+         <width>461</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	border:1 solid px;
+	border-radius:9px;
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_input">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>131</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Agency FB</family>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;输入&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;密文/明文：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_key">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>310</y>
+         <width>121</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;密钥：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_out">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>540</y>
+         <width>151</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Agency FB</family>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;输出&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;明文/密文：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="textBrowser_output">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>530</y>
+         <width>461</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QText_Brower{
+border:2 solid px;
+	border-radius:9px;
+	
+}</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_attack">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>650</y>
+         <width>280</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	border: 2px solid black;
+	background-color:rgb(255, 255, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>进入求密钥模式</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_attack_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>650</y>
+         <width>280</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	border: 2px solid black;
+	background-color:rgb(255, 255, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>退出求密钥模式</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_attack_3">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>650</y>
+         <width>280</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	border: 2px solid black;
+	background-color:rgb(255, 255, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>求解密钥</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_attack_4">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>650</y>
+         <width>280</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	border: 2px solid black;
+	background-color:rgb(255, 255, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>进入CBC模式</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_attack_5">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>650</y>
+         <width>280</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	border: 2px solid black;
+	background-color:rgb(255, 255, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>退出CBC模式</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_attack_6">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>650</y>
+         <width>280</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton{
+	height:35px;
+	border-radius:9px;
+	border: 2px solid black;
+	background-color:rgb(255, 255, 255)
+}</string>
+       </property>
+       <property name="text">
+        <string>CBC加密</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
